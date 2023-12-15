@@ -2,7 +2,7 @@ function stringChop(str, size) {
   // your code here
 	let l=[],m="";
   let n;
-	if(str==="null"||str===undefined) return [];
+	if(str===""||str===undefined) return [];
    else{	
   for(let i=0;i<str.length;i=(i+size)){
     let n1=parseInt(i);

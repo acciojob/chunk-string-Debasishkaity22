@@ -2,7 +2,7 @@ function stringChop(str, size) {
   // your code here
 	let l=[],m="";
   let n;
-	if(str==="null") return l;
+	if(str==="null"||str===undefined) return [];
    else{	
   for(let i=0;i<str.length;i=(i+size)){
     let n1=parseInt(i);
@@ -20,7 +20,9 @@ function stringChop(str, size) {
 }
 
 
+
 // Do not change the code below
 const str = prompt("Enter String.");
 const size = prompt("Enter Chunk Size.");
 alert(stringChop(str, size));
+
